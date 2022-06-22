@@ -11,17 +11,22 @@ import Form4 from "./components/FormStages/Form4";
 
 function App() {
   const [level, setLevel] = useState(1);
+  const [name, setName] = useState("User");
 
   const nextLevel = () => {
     if (level < 4) setLevel(level + 1);
     else setLevel(1);
   };
 
+  const userName = (name) => {
+    setName(name);
+  };
+
   const forms = [
-    <Form1 setLevel={nextLevel} />,
+    <Form1 setLevel={nextLevel} setName={userName} />,
     <Form2 setLevel={nextLevel} />,
     <Form3 setLevel={nextLevel} />,
-    <Form4 setLevel={nextLevel} />,
+    <Form4 setLevel={nextLevel} name={name} />,
   ];
 
   return (

@@ -9,7 +9,7 @@ const Form2 = (props) => {
   return (
     <form className={classes.formContainer} onSubmit={nextLevel}>
       <div className={classes.check}>✓</div>
-      <span className={classes.formHeader}>Congratulations, User!</span>
+      <span className={classes.formHeader}>Congratulations, {props.name}!</span>
       <span className={classes.formSub}>
         You have completed onboarding, you can start using the Eden!
       </span>

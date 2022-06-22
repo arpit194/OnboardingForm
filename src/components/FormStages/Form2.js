@@ -24,7 +24,7 @@ const Form2 = (props) => {
         </label>
         <div className={classes.url}>
           <span>www.eden.com/</span>
-          <input type="text" id="url" placeholder="Example" required />
+          <input type="text" id="url" placeholder="Example" />
         </div>
       </div>
       <div className={classes.formControl}>
