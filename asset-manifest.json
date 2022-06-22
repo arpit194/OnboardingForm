@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/OnboardingForm/static/css/main.cfcdb0a6.css",
+    "main.js": "/OnboardingForm/static/js/main.8e3e018a.js",
+    "index.html": "/OnboardingForm/index.html",
+    "main.cfcdb0a6.css.map": "/OnboardingForm/static/css/main.cfcdb0a6.css.map",
+    "main.8e3e018a.js.map": "/OnboardingForm/static/js/main.8e3e018a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfcdb0a6.css",
+    "static/js/main.8e3e018a.js"
+  ]
+}
