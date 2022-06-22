@@ -1,0 +1,187 @@
+@keyframes flyIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.formContainer {
+  margin: auto auto 10px;
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  position: relative;
+  width: 50%;
+  animation-name: flyIn;
+  animation-duration: 1s;
+}
+
+.formHeader {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222;
+  margin: 10px auto;
+}
+
+.formSub {
+  font-size: 20px;
+  color: #999;
+  margin: 10px auto;
+}
+
+.formControl {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 15px auto 0px;
+}
+
+.formControl label {
+  color: #444;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.formControl label > span {
+  color: #999;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.formControl input {
+  padding: 10px;
+  border: 1px solid rgb(191, 196, 207);
+  border-radius: 5px;
+}
+
+.formControl button {
+  padding: 15px 10px;
+  background-color: #664de5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: 900;
+  transition: 0.25s;
+}
+
+.formControl button:hover {
+  background-color: #4d3bab;
+  color: #ccc;
+}
+
+.url {
+  display: flex;
+  width: 100%;
+}
+
+.url span {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid rgb(191, 196, 207);
+  border-radius: 5px 0px 0px 5px;
+  color: #999;
+  text-align: center;
+  font-weight: 600;
+  flex: 2;
+}
+
+.url input {
+  padding: 10px;
+  border: 1px solid rgb(191, 196, 207);
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+  flex: 3;
+}
+
+.check {
+  background-color: #664de5;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  font-size: 75px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 15px auto;
+}
+
+.plan {
+  width: 45%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 30px 15px;
+  text-align: left;
+  transition: 0.5s;
+}
+
+.planHeader {
+  color: #222;
+  font-weight: 600;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+.planSub {
+  color: #999;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.planIcon {
+  font-size: 2em;
+  color: #999;
+}
+
+.plan:hover {
+  border: 1px solid #664de5;
+}
+
+.plan:hover .planSub {
+  color: #664de5;
+}
+
+.planSelected {
+  background-color: #664de533;
+  border: 1px solid #664de5;
+  transition: 0.5s;
+}
+
+.planSelected .planSub {
+  color: #664de5;
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    width: 100%;
+  }
+
+  .formHeader {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .formSub {
+    font-size: 15px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .url span {
+    font-size: 12px;
+  }
+
+  .url input {
+    width: 50%;
+  }
+}
